@@ -2,35 +2,161 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centro Deportivo Actívate</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1e3799;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .presentacion {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .presentacion h2 {
+      color: #0a3d62;
+    }
+
+    .formulario-contacto {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario-contacto h3 {
+      color: #0a3d62;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fbd;
+    }
+
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Centro Deportivo Actívate</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="actividades.html">Actividades</a></li>
-        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <p>Tu lugar para moverte, entrenar y mejorar tu salud</p>
   </header>
 
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="actividades.html">Actividades</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="tarifas-horarios.html">Tarifas y Horarios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
   <main>
-    <section class="bienvenida">
-      <h2>¡Bienvenidos al lugar donde tu cuerpo se activa!</h2>
-      <p>Clases, entrenamientos y comunidad. Únete hoy.</p>
+
+    <section class="presentacion">
+      <h2>Bienvenidos a Actívate</h2>
+      <p>En nuestro centro deportivo encontrarás un espacio moderno y completo, pensado para todas las edades y niveles. Ofrecemos clases dirigidas, áreas de musculación, zona de cardio, piscina y más. Nuestro equipo de profesionales te acompañará en tu camino hacia una vida más activa y saludable.</p>
+
+      <p>Desde 2010, somos referentes en bienestar físico y mental en la comunidad. Nuestro objetivo es brindarte una experiencia deportiva única, accesible y divertida.</p>
     </section>
-    <section class="destacado">
-      <img src="assets/img/gimnasio.jpg" alt="Imagen del centro deportivo" />
+
+    <section class="formulario-contacto">
+      <h3>¿Tenés dudas? Escribinos</h3>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="tucorreo@email.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Centro Deportivo Actívate</p>
+    <p>&copy; 2025 Centro Deportivo Actívate. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
