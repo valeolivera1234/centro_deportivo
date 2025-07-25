@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarifas y Horarios - Centro Deportivo Actívate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1e3799;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0a3d62;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #1e3799;
+      color: white;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #0a3d62;
+    }
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+      }
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+      }
+      td:before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #0a3d62;
+      }
+      td:nth-of-type(1):before { content: "Tipo"; }
+      td:nth-of-type(2):before { content: "Precio"; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Centro Deportivo Actívate</h1>
+    <p>Conocé nuestras tarifas y horarios</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="actividades.html">Actividades</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="tarifas-horarios.html">Tarifas y Horarios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <h2>Tarifas</h2>
+    <table>
+      <caption>Planes y precios de membresía</caption>
+      <thead>
+        <tr>
+          <th>Tipo de Membresía</th>
+          <th>Precio Mensual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Básico</td>
+          <td>$20.000</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>$35.000</td>
+        </tr>
+        <tr>
+          <td>Familiar</td>
+          <td>$50.000</td>
+        </tr>
+        <tr>
+          <td>Estudiante</td>
+          <td>$15.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Horarios</h2>
+    <table>
+      <caption>Horario de atención y actividades</caption>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes a Viernes</td>
+          <td>6:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>8:00 AM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>8:00 AM - 4:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Centro Deportivo Actívate. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
